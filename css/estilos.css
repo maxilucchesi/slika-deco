@@ -79,6 +79,7 @@ nav.menuPrincipal {
   100% {
     opacity: 1; } }
 
+    
 .menuPrincipal, ul ol {
   color: #d57149;
   list-style-type: disc; }
@@ -103,6 +104,15 @@ nav.menuPrincipal {
 
 #separador {
   color: #7c3c21; }
+  
+.mi-carousel-inner {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	overflow: hidden;
+}
 
 #miCarousel {
   background-color: #f9cb9c;

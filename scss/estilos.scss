@@ -58,7 +58,6 @@ html {
 	align-self: center;
 	justify-content: start;
 	max-height: 100%;
-
 }
 
 .logo img {
@@ -133,6 +132,22 @@ nav.menuPrincipal {
 	margin-left: 15%;
 	margin-right: 15%;
 }
+
+.mi-carousel-inner {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	overflow: hidden;
+}
+
+#centrar{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 #miCarousel {
 	color: $color-backgroundCarrousel;

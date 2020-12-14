@@ -73,7 +73,8 @@ nav.menuPrincipal {
   -ms-grid-column: 2;
   grid-area: nav;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
+      -ms-grid-row-align: center;+
+      
       align-self: center;
 }
 

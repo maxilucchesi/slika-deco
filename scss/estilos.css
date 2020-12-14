@@ -73,8 +73,7 @@ nav.menuPrincipal {
   -ms-grid-column: 2;
   grid-area: nav;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;+
-      
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -193,7 +192,12 @@ nav.menuPrincipal {
 }
 
 #productos {
-  color: #ffe699;
+  background-color: #ffe699;
+  padding: 1%;
+}
+
+#introduccion {
+  background-color: #f9cb9c;
   padding: 1%;
 }
 
@@ -202,7 +206,7 @@ nav.menuPrincipal {
 }
 
 #pie {
-  color: #fae5cf;
+  background-color: #fae5cf;
   padding: 1%;
 }
 

@@ -1,6 +1,7 @@
 $color-titulo: #aa4a30;
 $color-parrafo: #d57149;
 $color-backgroundCarrousel: #f9cb9c;
+$color-backgroundIntroduccion: #f9cb9c;
 $color-backgroundProductos: #ffe699;
 $color-backgroungPie: #fae5cf;
 $color_backgroundTablaEnvios: #f9cb9c;
@@ -21,6 +22,7 @@ html {
 	width: 100%;
 	max-height: 100%;
 }
+
 
 .container {
 	width: 100%;
@@ -161,7 +163,12 @@ nav.menuPrincipal {
 }
 
 #productos {
-	color: $color-backgroundProductos;
+	background-color: $color-backgroundProductos;
+	padding: 1%;
+}
+
+#introduccion {
+	background-color: $color-backgroundIntroduccion;
 	padding: 1%;
 }
 
@@ -171,7 +178,7 @@ nav.menuPrincipal {
 
 
 #pie {
-	color: $color-backgroungPie;
+	background-color: $color-backgroungPie;
 	padding: 1%;
 }
 
@@ -263,3 +270,4 @@ nav.menuPrincipal {
 	color: $color-parrafo;
 	list-style-type: disc;
 }
+

@@ -40,12 +40,12 @@ body {
 }
 
 #header {
-  height: 100px;
+  height: 5rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 20px 0;
+  padding: 5px 0;
   background: #EDE5D8;
   -webkit-box-shadow: 0 0 20px 10px rgba(127, 137, 161, 0.3);
           box-shadow: 0 0 20px 10px rgba(127, 137, 161, 0.3);
@@ -290,7 +290,7 @@ select {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60%;
+    max-width: 50%;
     overflow: hidden;
   }
 }

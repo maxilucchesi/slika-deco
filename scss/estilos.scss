@@ -5,6 +5,7 @@ $color-backgroundIntroduccion: #f9cb9c;
 $color-backgroundProductos: #ffe699;
 $color-backgroungPie: #fae5cf;
 $color_backgroundTablaEnvios: #f9cb9c;
+$color-backgroundHeader: #EDE5D8;
 
 html {
 	font-family: 'Fira Sans', sans-serif;
@@ -23,6 +24,10 @@ html {
 	max-height: 100%;
 }
 
+.navbar {
+	margin-left: 15%;
+	margin-right: 15%;
+}
 
 .container {
 	width: 100%;
@@ -32,10 +37,6 @@ html {
 	margin-left: auto
 }
 
-	/*#header {
-	margin-left: 15%;
-	margin-right: 15%;
-}*/
 
 #header {
 	height: 100px;
@@ -43,17 +44,15 @@ html {
 	z-index: 997;
 	transition: all 0.5s;
 	padding: 20px 0;
-	background: #fff;
-	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+	background: $color-backgroundHeader;
+	box-shadow: 0 0 20px 10px rgba(127, 137, 161, 0.3);
 	position: sticky;
 	top: 0;
 }
 
-/*#header .logo img {
-  padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
-}*/
+.bg-light {
+    background-color: $color-backgroundHeader!important;
+}
 
 .grilla.logo {
 	grid-area: logo;
@@ -64,18 +63,6 @@ html {
 
 .logo img {
 	max-height: 100%;
-}
-
-nav.menuPrincipal {
-	grid-area: nav;
-	align-self: center;
-}
-
-.menuPrincipal, .menuPrincipal ul{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-self: center;
 }
 
 .titulo {
@@ -95,6 +82,19 @@ nav.menuPrincipal {
 #imgLogo {
 	animation-duration: 2s;
 	animation-name: aparecer;
+	max-height: 100%;
+	width: auto;
+}
+
+@media (max-widht: 800px) {
+	.content {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.navbar {
+		margin-left: none;
+		margin-right: none;
+	}
 }
 
 @keyframes aparecer {
@@ -107,32 +107,28 @@ nav.menuPrincipal {
 	}
 }
 
-.menuPrincipal, ul ol {
-	color: $color-parrafo;
-	list-style-type: disc;
-}
-
-.menuPrincipal, ul li {
-	color: $color-parrafo;
-}
-
 .botonMenu {
 	margin-left: 5%;
 	margin-right: 5%;
 	color: $color-parrafo;
 }
 
+/* button, input {
+	overflow: visible;
+	display: block;
+	width: 100%;
+} */
 
-.menuPrincipal a:hover,
-.menuPrincipal .active > a,
-.menuPrincipal li:hover > a {
-	color: $color-parrafo;
-	text-decoration: none;
+select {
+    word-wrap: normal;
+    display: block;
 }
 
 .content {
 	margin-left: 15%;
 	margin-right: 15%;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .mi-carousel-inner {
@@ -182,10 +178,6 @@ nav.menuPrincipal {
 	padding: 1%;
 }
 
-.grilla #imgLogo {
-	max-height: 100%;
-	width: auto;
-}
 
 #pie #imgLogo {
 	height: 40px;
@@ -227,6 +219,18 @@ nav.menuPrincipal {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+}
+
+#ubicacion p {
+	margin-bottom: 0px;
+}
+
+#whatsapp p {
+	margin-bottom: 0px;
+}
+
+#email p {
+	margin-bottom: 0px;
 }
 
 #datosContacto #whatsapp {

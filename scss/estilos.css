@@ -19,6 +19,11 @@ html {
   max-height: 100%;
 }
 
+.navbar {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -27,10 +32,6 @@ html {
   margin-left: auto;
 }
 
-/*#header {
-	margin-left: 15%;
-	margin-right: 15%;
-}*/
 #header {
   height: 100px;
   -webkit-transition: all 0.5s;
@@ -38,19 +39,18 @@ html {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  background: #EDE5D8;
+  -webkit-box-shadow: 0 0 20px 10px rgba(127, 137, 161, 0.3);
+          box-shadow: 0 0 20px 10px rgba(127, 137, 161, 0.3);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
-/*#header .logo img {
-  padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
-}*/
+.bg-light {
+  background-color: #EDE5D8 !important;
+}
+
 .grilla.logo {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -66,30 +66,6 @@ html {
 
 .logo img {
   max-height: 100%;
-}
-
-nav.menuPrincipal {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: nav;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.menuPrincipal, .menuPrincipal ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 .titulo {
@@ -111,6 +87,19 @@ nav.menuPrincipal {
           animation-duration: 2s;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
+  max-height: 100%;
+  width: auto;
+}
+
+@media (max-widht: 800px) {
+  .content {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .navbar {
+    margin-left: none;
+    margin-right: none;
+  }
 }
 
 @-webkit-keyframes aparecer {
@@ -131,31 +120,27 @@ nav.menuPrincipal {
   }
 }
 
-.menuPrincipal, ul ol {
-  color: #d57149;
-  list-style-type: disc;
-}
-
-.menuPrincipal, ul li {
-  color: #d57149;
-}
-
 .botonMenu {
   margin-left: 5%;
   margin-right: 5%;
   color: #d57149;
 }
 
-.menuPrincipal a:hover,
-.menuPrincipal .active > a,
-.menuPrincipal li:hover > a {
-  color: #d57149;
-  text-decoration: none;
+/* button, input {
+	overflow: visible;
+	display: block;
+	width: 100%;
+} */
+select {
+  word-wrap: normal;
+  display: block;
 }
 
 .content {
   margin-left: 15%;
   margin-right: 15%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .mi-carousel-inner {
@@ -208,11 +193,6 @@ nav.menuPrincipal {
 #pie {
   background-color: #fae5cf;
   padding: 1%;
-}
-
-.grilla #imgLogo {
-  max-height: 100%;
-  width: auto;
 }
 
 #pie #imgLogo {
@@ -268,6 +248,18 @@ nav.menuPrincipal {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#ubicacion p {
+  margin-bottom: 0px;
+}
+
+#whatsapp p {
+  margin-bottom: 0px;
+}
+
+#email p {
+  margin-bottom: 0px;
 }
 
 #datosContacto #whatsapp {

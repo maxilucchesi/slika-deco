@@ -49,7 +49,7 @@ body {
 }
 
 .bg-light {
-  background-color: transparent !important;
+  background-color: #EDE5D8 !important;
 }
 
 @media (max-width: 768px) {

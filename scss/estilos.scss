@@ -63,18 +63,17 @@ html {
 
 .logo img {
 	max-height: 100%;
+	border-radius: 5%;
 }
 
 .titulo {
 	color: $color-titulo;
 	font-size: 20px;
-	margin-left: 5px;
 }
 
 .parrafo{
 	color: $color-parrafo;
 	font-size: 16px;
-	margin-left: 5px;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
@@ -84,7 +83,24 @@ html {
 	animation-name: aparecer;
 	max-height: 100%;
 	width: auto;
+	border-radius: 15%;
 }
+
+img {
+	border-radius: 3%;
+}
+
+#servicios .card {
+	background: #D48760;
+	border-color: #D48760;
+	border-radius: 10px;
+	margin: 15px 15px;
+	padding: 15px 15px;
+	text-align: center;
+	color: #fff;
+	transition: 0.3s ease-in-out;
+	height: 100%;
+  }
 
 @media (max-widht: 800px) {
 	.content {

@@ -4,11 +4,12 @@ $color-backgroundProductos: #ffe699;
 $color-backgroungPie: #fae5cf;
 $color_backgroundTablaEnvios: #f9cb9c;
 $color-backgroundHeader: #EDE5D8;
+$link-hover-color: black;
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Balsamiq Sans', cursive;
 }
 
 
@@ -41,7 +42,9 @@ body {
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
-	margin-left: auto
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 
@@ -85,6 +88,7 @@ body {
 
 .titulo {
 	font-size: 2rem;
+	font-weight: bold;
 }
 
 .parrafo{
@@ -131,24 +135,58 @@ img {
 		margin-left: none;
 		margin-right: none;
 	}
+
+	.tipoProductoHome {
+		text-align: center;
+		justify-content: center;
+		font-size: 1.5rem;
+	}
 }
 
 
 @media (max-width: 575.98px) {
 	.content {
-		margin-left: 7%;
-		margin-right: 7%;
-		margin-top: 5px;
-		margin-bottom: 5px;
+		margin-left: 3%;
+		margin-right: 3%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.tipoProductoHome {
+		text-align: center;
+		justify-content: center;
+		font-size: 1.5rem;
+	}
+
+	#cuadros {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#apliques {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#espejos {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 	.content {
-		margin-left: 7%;
-		margin-right: 7%;
+		margin-left: 3%;
+		margin-right: 3%;
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+
+	.tipoProductoHome {
+		color: black;
+		text-align: center;
+		justify-content: center;
+		font-size: 1.5rem;
 	}
 }
 
@@ -159,6 +197,14 @@ img {
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
+
+	.tipoProductoHome {
+		color: black;
+		text-align: center;
+		justify-content: center;
+		margin-top: 1rem;
+		font-size: 1.5rem;
+	}
 }
 
 @media (min-width: 992px) {
@@ -168,13 +214,22 @@ img {
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
+
+	.tipoProductoHome {
+		color: black;
+		text-align: center;
+		justify-content: center;
+		margin-top: 1rem;
+		font-size: 1.5rem;
+	}
 }
 
 @media (max-width: 575.98px) {
 	.navbar {
-		margin-left: 7%;
-		margin-right: 7%;
+		margin-left: 3%;
+		margin-right: 3%;
 	}
+	
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -223,6 +278,23 @@ img {
 	margin-right: 5%;
 }
 
+.map-container{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	margin: 2%;
+	position:relative;
+	height:0;
+	border-radius: 2%;
+	}
+
+.map-container iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+	}
+
 select {
     word-wrap: normal;
     display: block;
@@ -237,6 +309,18 @@ select {
 		max-width: 90%;
 		height: auto;
 		overflow: hidden;
+	}
+
+	#imgBienvenida {
+		padding: 5%;
+	}
+
+	.titulo {
+		text-align: center;
+	}
+
+	.parrafo {
+		text-align: center;
 	}
 }
 
@@ -282,6 +366,14 @@ select {
 		max-width: 50%;
 		overflow: hidden;
 	}
+
+	.tipoProductoHome {
+		color: black;
+		text-align: center;
+		justify-content: center;
+		margin-top: 1rem;
+		font-size: 1.5rem;
+	}
 }
 
 #centrar{
@@ -309,9 +401,7 @@ select {
 		justify-content: space-between;
 	}
 
-	#textoIntroduccion {
-		padding-right: 0%;
-	}
+
 }
 #productos {
 	background-color: $color-backgroundProductos;
@@ -417,6 +507,25 @@ select {
 	display: inline-block;
 }
 
+.table {
+	background-color: #eddeaa;
+}
+
+.table thead th {
+    vertical-align: bottom;
+	border-bottom: 2px solid #f3cd42;
+	border-left: #f3cd42;
+	border-right: #f3cd42;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+	border-top: 2px solid #f3cd42;
+	border-left: #f3cd42;
+	border-right: #f3cd42;
+}
+
 #tabla-productos {
 	display: inline-block;
 	text-align: center;
@@ -424,6 +533,7 @@ select {
 
 #textoIntroduccion {
 	padding-right: 5%;
+	padding-left: 5%;
 }
 
 #contacto {
@@ -443,3 +553,6 @@ select {
 	list-style-type: disc;
 }
 
+.black {
+	color: black;
+}

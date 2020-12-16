@@ -141,6 +141,7 @@ img {
 		justify-content: center;
 		font-size: 1.5rem;
 	}
+
 }
 
 
@@ -172,6 +173,20 @@ img {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+	#imgBienvenida {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	#pie #imgLogo {
+		height: 40px;
+		width: auto;
+		display: block;
+		margin: auto;
+	}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -187,6 +202,18 @@ img {
 		text-align: center;
 		justify-content: center;
 		font-size: 1.5rem;
+	}
+
+	#imgBienvenida {
+		max-width: 90%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	#pie #imgLogo {
+		height: 40px;
+		width: auto;
 	}
 }
 
@@ -205,6 +232,18 @@ img {
 		margin-top: 1rem;
 		font-size: 1.5rem;
 	}
+
+	#imgBienvenida {
+		max-width: 70%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	#pie #imgLogo {
+		height: 40px;
+		width: auto;
+	}
 }
 
 @media (min-width: 992px) {
@@ -221,6 +260,18 @@ img {
 		justify-content: center;
 		margin-top: 1rem;
 		font-size: 1.5rem;
+	}
+
+	#imgBienvenida {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	#pie #imgLogo {
+		height: 40px;
+		width: auto;
 	}
 }
 
@@ -322,6 +373,12 @@ select {
 	.parrafo {
 		text-align: center;
 	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -332,6 +389,12 @@ select {
 		margin-right: auto;
 		max-width: 90%;
 		overflow: hidden;
+	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 }
 
@@ -344,6 +407,12 @@ select {
 		max-width: 80%;
 		overflow: hidden;
 	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -354,6 +423,12 @@ select {
 		margin-right: auto;
 		max-width: 70%;
 		overflow: hidden;
+	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }
 
@@ -374,6 +449,12 @@ select {
 		margin-top: 1rem;
 		font-size: 1.5rem;
 	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 #centrar{
@@ -388,17 +469,21 @@ select {
 	padding: 1%;
 }
 
-#introduccion-flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
 
 @media (max-width: 575.98px) {
 	#introduccion-flex {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+
+	#redes {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-left: 30%;
+		margin-right: 30%;
 	}
 
 
@@ -424,17 +509,13 @@ select {
 }
 
 
-#pie #imgLogo {
-	height: 40px;
-	width: auto;
-}
-
 .imgCarrusel {
 	width: 25%;
 	height: 25%;
 	display: block;
 	margin: auto;
 }
+
 
 .btn-primary {
     color: #fff;

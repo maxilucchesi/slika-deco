@@ -7,103 +7,78 @@
     <meta name="keywords" content="slika, deco, slika deco, decoracion, cuadros, espejos, apliques, bazar, estilo, decoracion de interiores, muebles">
     <meta name="description"  content="Venta de cuadros apliques y espejos, Decoracion de interiores, Articulos de decoracion">
     <title>Slika Deco | Contacto</title>
-    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo/isotipo.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="scss/estilos.css">
 </head>
 <body>
     <!--Inicio del encabezado-->
     <header id="header" class="fixed-top header-scrolled">
-        <!--<div class="container">-->
-        <div class="grilla container">
-            <section class="logo">
-                <a href="index.html"><img src="images/logo/logo.jpg" id="imgLogo" /> </a>
-            </section>
-            <nav class="menuPrincipal">
-                <ul>
-                    <li class="botonMenu">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="botonMenu">
-                        <a href="productos.html">Productos</a>
-                    </li>
-                    <li class="botonMenu">
-                        <a href="envios.html">Envíos</a>
-                    </li>
-                    <li class="botonMenu">
-                        <a href="preguntas.html">Preguntas</a>
-                    </li>
-                    <li class="botonMenu active">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-            <!--</div>-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo/logo-sm.jpg" id="imgLogo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Inicio</a>
+            <a class="nav-item nav-link" href="productos.html">Productos</a>
+            <a class="nav-item nav-link" href="envios.html">Envíos</a>
+            <a class="nav-item nav-link" href="preguntas.html">Preguntas</a>
+            <a class="nav-item nav-link active" href="contacto.html">Contacto <span class="sr-only"></span></a>
+          </div>
         </div>
+      </nav>
     </header>
     <!--Fin del encabezado-->
 
     <main id="main">
         <div class="content">
-            <div id="contacto" class="container">
-
+            <div id="contacto">
                 <h2 class="titulo">Para escribirnos:</h2>
-
                 <form>
-                    <fieldset>
-                        <legend>Tu información</legend>
-
-                        <div class="form-fieldset">
-                            <label for="nombre_apellido">Nombre:</label>
-                            <input type="text" name="nombre_apellido" />
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Apellido</label>
+                        <input type="text" class="form-control" placeholder="Apellido">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label>Correo electrónico</label>
+                          <input type="email" class="form-control" placeholder="Correo electrónico">
                         </div>
-
-                        <div class="form-fieldset">
-                            <label for="nombre_apellido">Apellido:</label>
-                            <input type="text" name="nombre_apellido" />
+                        <div class="form-group col-md-6">
+                        <label>Teléfono</label>
+                        <div class="input-group mb-6">
+                            <div class="input-group-prepend">
+                            <div class="input-group-text">+54</div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Teléfono">
                         </div>
-
-                        <div class="form-fieldset">
-                            <label for="correo">Correo electrónico:</label>
-                            <input type="email" name="correo" />
                         </div>
-
-                        <div class="form-fieldset">
-                            <label for="telefono">Teléfono:</label>
-                            <input type="number" name="telefono" />
-                        </div>
-
-                        <div class="form-fieldset">
-                            Desea ser contactado vía:
-                            <select name="víaDeContacto">
-                                <option value="C">Correo electrónico</option>
-                                <option value="T">Teléfono</option>
-                            </select>
-                        </div>
-
-                        <div class="form-fieldset">
-                            <label for="asunto">Asunto:</label>
-                            <input type="text" name="asunto" />
-                        </div>
-
-                        <div class="form-fieldset">
-                            <label for="mensaje">Tu mensaje:</label>
-                            <textarea type="text" name="mensaje"></textarea>
-                        </div>
-
-                        <div class="form-fieldset">
-                            Desea suscribirse al Newsletter:
-                            <input type="checkbox" name="acepta" value="1" />
-                        </div>
-
-                        <div class="form-fieldset">
-                            <input type="submit" name="Enviar" value="Enviar">
-                            <input type="reset" name="Limpiar" value="Limpiar">
-                        </div>
-                    </fieldset>
-                </form>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Breve mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tu mensaje"></textarea>
+                      </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Quiero recibir novedades por correo
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
             </div>
         </div>
     </main>

@@ -7,129 +7,177 @@
     <meta name="keywords" content="slika, deco, slika deco, decoracion, cuadros, espejos, apliques, bazar, estilo, decoracion de interiores, muebles">
     <meta name="description"  content="Venta de cuadros apliques y espejos, Decoracion de interiores, Articulos de decoracion">
     <title>Slika Deco | Homepage</title>
-    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo/isotipo.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="scss/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
 
-    <!--hoooolaaaaa-->
-
     <!--Inicio del encabezado-->
-    <header id="header" class="header-scrolled">
-        <!--<div class="container">-->
-        <div class="grilla container">
-            <section class="logo">
-                <a href="index.html"><img src="images/logo/logo.jpg" id="imgLogo" /> </a>
-            </section>
-            <nav class="menuPrincipal">
-                <ul>
-                    <li class="botonMenu active">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="botonMenu">
-                        <a href="productos.html">Productos</a>
-                    </li>
-                    <li class="botonMenu">
-                        <a href="envios.html">Envíos</a>
-                    </li>
-                    <li class="botonMenu">
-                        <a href="preguntas.html">Preguntas</a>
-                    </li>
-                    <li class="botonMenu">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-            <!--</div>-->
-        </div>
+    <header id="header" class="fixed-top header-scrolled">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo-sm.jpg" id="imgLogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only"></span></a>
+                <a class="nav-item nav-link" href="productos.html">Productos</a>
+                <a class="nav-item nav-link" href="envios.html">Envíos</a>
+                <a class="nav-item nav-link" href="preguntas.html">Preguntas</a>
+                <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+          </nav>
     </header>
     <!--Fin del encabezado-->
+
+    
     <!--Comienzo del Home -->
-    <div id="carouselExampleInterval" class="carousel slide content" data-ride="carousel">
+    <div id="miCarousel">
+        <div id="carouselExampleInterval" class="carousel slide content" data-ride="carousel" data-pause="false">
 
-        <div class="mi-carousel-inner">
-            <div class="carousel-item active" data-interval="5000">
-                <img src="images/cuadros/c-Broolkyn.jpg" class="d-block w-100 imgCarrusel" alt="Cuadro">
+            <div class="mi-carousel-inner">
+                <div class="carousel-item active" data-interval="3500">
+                    <img src="images/cuadros/c-Broolkyn.jpg" class="d-block w-100 imgCarrusel" alt="Cuadro">
+                </div>
+                <div class="carousel-item" data-interval="3500">
+                    <img src="images/apliques/a-Hamaca.jpg" class="d-block w-100" alt="Aplique">
+                </div>
+                <div class="carousel-item" data-interval="3500">
+                    <img src="images/apliques/a-Londres.jpg" class="d-block w-100" alt="Espejos">
+                </div>
             </div>
-            <div class="carousel-item" data-interval="5000">
-                <img src="images/apliques/a-Hamaca.jpg" class="d-block w-100" alt="Aplique">
-            </div>
-            <div class="carousel-item" data-interval="5000">
-                <img src="images/apliques/a-Londres.jpg" class="d-block w-100" alt="Espejos">
-            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-
-        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
     <!--Fin del Home-->
 
     <main id="main">
-        <div class="content">
-            <div id="introduccion-flex">
-                <div id="textoIntroduccion">
-                    <h2 class="titulo">Bienvenidos</h2>
-                    <p class="parrafo">
-                        Quienes somos, que hacemos y una breve intorucción del sitio para el usuario.
-                        Uno o dos párrafos que resuman lo mencionado
-                    </p>
-                </div>
-                <div id="imagenIntroduccion">
-                    <img class="imgIntroduccion" src="images/cuadros/c-NY.jpg">
+        <div id="introduccion">
+            <div class="container">
+                <div id="introduccion-flex">
+                    <div id="textoIntroduccion">
+                        <h2 class="titulo">Bienvenidos</h2>
+                        <p class="parrafo">
+                            En Slika Deco te ofrecemos una selección de nuestros últimos artículos modernos que hemos diseñado, ideales para decorar cualquier área del hogar u oficina. Armá o escogé un set de cuadros, espejos o apliques decorativos de nuestra galería que tenemos disponible, los cuales son ideales para decorar el living, comedor, cocina o habitación.
+                        </p>
+                    </div>
+                    <div id="imagenIntroduccion">
+                        <img id="imgBienvenida" src="images/cuadros/c-NY.jpg">
+                    </div>
                 </div>
             </div>
         </div>
 
+        <section id="servicios" class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="container">
+      
+              <div class="row row-eq-height justify-content-center">
+      
+                <div class="col-lg-4 mb-4">
+                  <div class="card wow bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
+                        <i class="fas fa-truck fa-4x"></i>
+                    <div class="card-body">
+                      <h6 class="card-title">Envíos</h6>
+                      <p class="card-text">Hacemos envíos a todo el país. Consulta tu ubicacion para conocer la tarifa que aplique. Los plazos ya funcionan con total normalidad.</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 mb-4">
+                  <div class="card wow bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
+                        <i class="far fa-credit-card fa-4x"></i>
+                    <div class="card-body">
+                      <h6 class="card-title">Medios de pago</h6>
+                      <p class="card-text">Contamos con todos los medios de pago. Podes abonar con tarjeta de débito, tarjeta de crédito, efectivo, transefencia bancaria o MercadoPago.</p>
+      
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 mb-4">
+                  <div class="card wow bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
+                        <i class="fas fa-shield-alt fa-4x"></i>
+                    <div class="card-body">
+                      <h6 class="card-title">Sitio Seguro</h6>
+                      <p class="card-text">Tus datos se encuentran protegidos y seguros. Web con cifrado SSL, 100% seguro.</p>
+      
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+      
+            </div>
+          </section>
 
 
         <div id="productos">
-            <div class="content">
+            <div class="container">
                 <!--Productos-->
 
                 <h2 class="titulo">Nuestros productos</h2>
                     <div class="row">
                         <div class="col-sm">
-                            <img class="imgProductos" src="images/cuadros/c-ByronBay.jpg">
+                            <div class="col">
+                                <div class="col-sm">
+                                    <a href="productos.html#cuadros">
+                                        <img class="imgProductos" src="images/cuadros/c-ByronBay.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-sm tipoProductoHome">
+                                    <a class="black" href="productos.html#cuadros">Cuadros</a>      
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm">
-                            <img class="imgProductos" src="images/apliques/a-Roma.jpg">
+                            <div class="col">
+                                <div class="col-sm ">
+                                    <a href="productos.html#apliques">
+                                        <img class="imgProductos" src="images/apliques/a-MundiCircular.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-sm tipoProductoHome">
+                                    <a class="black" href="productos.html#apliques">Apliques</a>      
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm">
-                            <img class="imgProductos" src="images/espejos/e-hexagono.jpg">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <a href="productos.html">Cuadros</a>
-                        </div>
-                        <div class="col-sm">
-                            <a href="productos.html">Apliques</a>
-                        </div>
-                        <div class="col-sm">
-                            <a href="productos.html">Espejos</a>
+                            <div class="col">
+                                <div class="col-sm">
+                                    <a href="productos.html#espejos">
+                                        <img class="imgProductos" src="images/espejos/e-Hexagono.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-sm tipoProductoHome">
+                                    <a class="black" href="productos.html#espejos">Espejos</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
             </div>
-        </div>
-
-
-
+        </div>        
         <div id="Contacto">
-            <div class="content">
+            <div class="container">
                 <h2 class="titulo">Contactanos</h2>
                 <div id="datosContacto">
                     <div id="ubicacion">
                         <img src="images/icons/pin.png" class="icons">
-                        <p>CABA</p>
+                        <p>CABA y todo el país</p>
                     </div>
                     <div id="whatsapp">
                         <img src="images/icons/whatsapp.png" class="icons">
@@ -140,58 +188,13 @@
                         <p>slikadeco@gmail.com</p>
                     </div>
                 </div>
-
-                <form class="needs-validation" novalidate>
-                    <div class="form-row">
-                        <div class="col-md-4 mb-3">
-                            <label for="validationCustom01">Nombre</label>
-                            <input type="text" class="form-control" id="validationCustom01" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationCustom02">Apellido</label>
-                            <input type="text" class="form-control" id="validationCustom02" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationCustomUsername">Correo Electrónico</label>
-                            <div class="input-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Asunto</span>
-                        </div>
-                        <input type="text" class="form-control" aria-describedby="basic-addon1">
-                    </div>
-
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Tu mensaje</span>
-                        </div>
-                        <textarea class="form-control" aria-label="Tu mensaje"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                Agree to terms and conditions
-                            </label>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-warning">Enviar</button>
-
-                </form>
+<!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+    <iframe src="https://maps.google.com/maps?q=buenosaires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+      style="border:0" allowfullscreen></iframe>
+  </div>
+  
+  <!--Google Maps-->
 
                 <script>
                     // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -224,16 +227,18 @@
         <div class="content">
             <img src="images/logo/logo.jpg" id="imgLogo"></a>
 
-            <p class="parrafo">Pequeño slogan o alguna frase</p>
+            <p class="parrafo">Decoración, estilo y moda</p>
 
             <p class="parrafo">Seguinos en las redes:</p>
 
-            <p class="parrafo">
-                <a href="https://www.instagram.com/coderhouse/">Instagram</a>
-            </p>
-            <p class="parrafo">
-                <a href="https://www.facebook.com/CoderHouse/">Facebook</a>
-            </p>
+            <div id="redes">
+                <a href="https://www.instagram.com/coderhouse/">
+                    <img src="images/icons/instagram.png" class="icons" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/CoderHouse/">
+                    <img src="images/icons/facebook.png" class="icons" alt="facebook" >
+                </a>
+            </div>
 
             <p class="parrafo">All rigths reserved - Maximiliano Lucchesi 2020</p>
             <div>

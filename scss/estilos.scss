@@ -1,12 +1,15 @@
-$color-titulo: #aa4a30;
-$color-parrafo: #d57149;
 $color-backgroundCarrousel: #f9cb9c;
+$color-backgroundIntroduccion: #f9cb9c;
 $color-backgroundProductos: #ffe699;
 $color-backgroungPie: #fae5cf;
 $color_backgroundTablaEnvios: #f9cb9c;
+$color-backgroundHeader: #EDE5D8;
+$link-hover-color: black;
 
-html {
-	font-family: 'Fira Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+body {
+	font-family: 'Balsamiq Sans', cursive;
 }
 
 
@@ -22,36 +25,54 @@ html {
 	max-height: 100%;
 }
 
+.navbar {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+@media (max-widht: 576px) {
+	div#carouselExampleInterval.carousel.slide.content {
+		height: 3rem;
+	}
+}
+
 .container {
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
-	margin-left: auto
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-	/*#header {
-	margin-left: 15%;
-	margin-right: 15%;
-}*/
 
 #header {
-	height: 100px;
+	height: 5rem;
 	transition: all 0.5s;
 	z-index: 997;
 	transition: all 0.5s;
-	padding: 20px 0;
-	background: #fff;
-	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+	padding: 5px 0;
+	background: $color-backgroundHeader;
+	box-shadow: 0 0 20px 10px rgba(127, 137, 161, 0.3);
 	position: sticky;
 	top: 0;
 }
 
-/*#header .logo img {
-  padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
-}*/
+.bg-light {
+    background-color: #EDE5D8 !important;
+}
+
+@media (max-width: 768px) {
+	.col-sm {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	} 
+}
+
 
 .grilla.logo {
 	grid-area: logo;
@@ -62,30 +83,16 @@ html {
 
 .logo img {
 	max-height: 100%;
-}
-
-nav.menuPrincipal {
-	grid-area: nav;
-	align-self: center;
-}
-
-.menuPrincipal, .menuPrincipal ul{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-self: center;
+	border-radius: 5%;
 }
 
 .titulo {
-	color: $color-titulo;
-	font-size: 20px;
-	margin-left: 5px;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .parrafo{
-	color: $color-parrafo;
 	font-size: 16px;
-	margin-left: 5px;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
@@ -93,6 +100,208 @@ nav.menuPrincipal {
 #imgLogo {
 	animation-duration: 2s;
 	animation-name: aparecer;
+	max-height: 100%;
+	width: auto;
+	border-radius: 15%;
+}
+
+img {
+	border-radius: 3%;
+}
+
+#servicios .card {
+	background: #D48760;
+	border-color: #D48760;
+	border-radius: 10px;
+	margin: 15px 15px;
+	padding: 15px 15px;
+	text-align: center;
+	color: #fff;
+	transition: 0.3s ease-in-out;
+	height: 100%;
+  }
+
+.row {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+@media (max-widht: 576px) {
+	.content {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.navbar {
+		margin-left: none;
+		margin-right: none;
+	}
+
+	.tipoProductoHome {
+		text-align: center;
+		justify-content: center;
+		font-size: 1.5rem;
+	}
+
+}
+
+
+@media (max-width: 575.98px) {
+	.content {
+		margin-left: 3%;
+		margin-right: 3%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.tipoProductoHome {
+		text-align: center;
+		justify-content: center;
+		font-size: 1.5rem;
+	}
+
+	#cuadros {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#apliques {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#espejos {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#imgBienvenida {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	#pie #imgLogo {
+		height: 40px;
+		width: auto;
+		display: block;
+		margin: auto;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.content {
+		margin-left: 3%;
+		margin-right: 3%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.tipoProductoHome {
+		color: black;
+		text-align: center;
+		justify-content: center;
+		font-size: 1.5rem;
+	}
+
+	#imgBienvenida {
+		max-width: 90%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	#pie #imgLogo {
+		height: 40px;
+		width: auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.content {
+		margin-left: 11%;
+		margin-right: 11%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.tipoProductoHome {
+		color: black;
+		text-align: center;
+		justify-content: center;
+		margin-top: 1rem;
+		font-size: 1.5rem;
+	}
+
+	#imgBienvenida {
+		max-width: 70%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	#pie #imgLogo {
+		height: 40px;
+		width: auto;
+	}
+}
+
+@media (min-width: 992px) {
+	.content {
+		margin-left: 15%;
+		margin-right: 15%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.tipoProductoHome {
+		color: black;
+		text-align: center;
+		justify-content: center;
+		margin-top: 1rem;
+		font-size: 1.5rem;
+	}
+
+	#imgBienvenida {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	#pie #imgLogo {
+		height: 40px;
+		width: auto;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.navbar {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.navbar {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.navbar {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar {
+		margin-left: 15%;
+		margin-right: 15%;
+	}	
 }
 
 @keyframes aparecer {
@@ -105,41 +314,147 @@ nav.menuPrincipal {
 	}
 }
 
-.menuPrincipal, ul ol {
-	color: $color-parrafo;
-	list-style-type: disc;
+.navbar-light .navbar-nav .nav-link {
+    color: #d48760;
 }
 
-.menuPrincipal, ul li {
-	color: $color-parrafo;
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #d48760;
+	font-weight: bold;
 }
+
 
 .botonMenu {
 	margin-left: 5%;
 	margin-right: 5%;
-	color: $color-parrafo;
 }
 
+.map-container{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	margin: 2%;
+	position:relative;
+	height:0;
+	border-radius: 2%;
+	}
 
-.menuPrincipal a:hover,
-.menuPrincipal .active > a,
-.menuPrincipal li:hover > a {
-	color: $color-parrafo;
-	text-decoration: none;
+.map-container iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+	}
+
+select {
+    word-wrap: normal;
+    display: block;
 }
 
-.content {
-	margin-left: 15%;
-	margin-right: 15%;
+@media (max-width: 575.98px) {
+	.mi-carousel-inner {
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 90%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	#imgBienvenida {
+		padding: 5%;
+	}
+
+	.titulo {
+		text-align: center;
+	}
+
+	.parrafo {
+		text-align: center;
+	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
 
-.mi-carousel-inner {
-	position: relative;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	overflow: hidden;
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.mi-carousel-inner {
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 90%;
+		overflow: hidden;
+	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.mi-carousel-inner {
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 80%;
+		overflow: hidden;
+	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.mi-carousel-inner {
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 70%;
+		overflow: hidden;
+	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 1200px) {
+	.mi-carousel-inner {
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 50%;
+		overflow: hidden;
+	}
+
+	.tipoProductoHome {
+		color: black;
+		text-align: center;
+		justify-content: center;
+		margin-top: 1rem;
+		font-size: 1.5rem;
+	}
+
+	#introduccion-flex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 #centrar{
@@ -154,14 +469,32 @@ nav.menuPrincipal {
 	padding: 1%;
 }
 
-#introduccion-flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+
+@media (max-width: 575.98px) {
+	#introduccion-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#redes {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+
+
+}
+#productos {
+	background-color: $color-backgroundProductos;
+	padding: 1%;
 }
 
-#productos {
-	color: $color-backgroundProductos;
+#introduccion {
+	background-color: $color-backgroundIntroduccion;
 	padding: 1%;
 }
 
@@ -171,19 +504,10 @@ nav.menuPrincipal {
 
 
 #pie {
-	color: $color-backgroungPie;
+	background-color: $color-backgroungPie;
 	padding: 1%;
 }
 
-.grilla #imgLogo {
-	max-height: 100%;
-	width: auto;
-}
-
-#pie #imgLogo {
-	height: 40px;
-	width: auto;
-}
 
 .imgCarrusel {
 	width: 25%;
@@ -192,21 +516,31 @@ nav.menuPrincipal {
 	margin: auto;
 }
 
+
+.btn-primary {
+    color: #fff;
+    background-color: #e09a5f;
+    border-color: #e09a5f;
+}
+
 .imgIntroduccion {
 	width: 400px;
 	height: 400px;
 }
 
 .imgProductos {
-	width: 300px;
-	height: 300px;
+	max-width: 100%;
+	height: auto;
 }
 
 #datosContacto {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
+
+
 
 .icons {
 	width: 32px;
@@ -220,6 +554,19 @@ nav.menuPrincipal {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	margin: 1%;
+}
+
+#ubicacion p {
+	margin-bottom: 0px;
+}
+
+#whatsapp p {
+	margin-bottom: 0px;
+}
+
+#email p {
+	margin-bottom: 0px;
 }
 
 #datosContacto #whatsapp {
@@ -241,9 +588,33 @@ nav.menuPrincipal {
 	display: inline-block;
 }
 
+.table {
+	background-color: #eddeaa;
+}
+
+.table thead th {
+    vertical-align: bottom;
+	border-bottom: 2px solid #f3cd42;
+	border-left: #f3cd42;
+	border-right: #f3cd42;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+	border-top: 2px solid #f3cd42;
+	border-left: #f3cd42;
+	border-right: #f3cd42;
+}
+
 #tabla-productos {
 	display: inline-block;
 	text-align: center;
+}
+
+#textoIntroduccion {
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 #contacto {
@@ -260,6 +631,9 @@ nav.menuPrincipal {
 }
 
 .metodosDePago, .metodosDePago ul{
-	color: $color-parrafo;
 	list-style-type: disc;
+}
+
+.black {
+	color: black;
 }

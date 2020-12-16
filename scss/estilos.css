@@ -326,6 +326,18 @@ img {
   font-weight: bold;
 }
 
+.bloquePregunta {
+  background-color: #ffe699;
+  border-radius: 10px;
+}
+
+div.bloquePregunta {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
 .botonMenu {
   margin-left: 5%;
   margin-right: 5%;
@@ -368,6 +380,9 @@ select {
   }
   .titulo {
     text-align: center;
+  }
+  #parrafoPregunta {
+    text-align: left;
   }
   .parrafo {
     text-align: center;
@@ -696,9 +711,10 @@ select {
 
 .metodosDePago, .metodosDePago ul {
   list-style-type: disc;
+  text-align: left;
 }
 
 .black {
   color: black;
 }
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.css.map */ 
